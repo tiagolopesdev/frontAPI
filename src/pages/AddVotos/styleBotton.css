@@ -1,0 +1,19 @@
+.bttonAddVoto {
+    width: 100px;
+    padding: 5px;    
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    border: 0;
+    border-radius: 50px;    
+    color: #FFFFFF;
+    font-size: 16px;
+    transition: all 0.3 ease;    
+}
+
+
+
+
+
+
+
