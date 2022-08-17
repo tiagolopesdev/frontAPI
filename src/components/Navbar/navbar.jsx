@@ -1,14 +1,25 @@
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export function NavbarComponent() {
-    return(
-        // <div>Hello</div>        
-        <nav class="navbar">            
-            <div class="bottons">        
-                <button class="btn" id="add" type="submit">Adicionar Restaurante</button>
-                <button class="btn" id="add" type="submit">Adicionar Voto</button>
-                <button class="btn" id="add" type="submit">Restaurante Vencedor</button>
-                <button class="btn" id="add" type="submit">Adicionar Usuário</button>
+    return(              
+        <nav className="navbar">            
+            <div className="bottons">  
+                <Link to="/">
+                <button className="btn" id="add">Adicionar Restaurante</button>                
+                </Link> 
+                <Link to="/addvotos">
+                    <button className="btn" id="add">Adicionar Voto</button>
+                </Link>                                 
+                <Link to="/getRestauranteVencedor">
+                    <button className="btn" id="add">Restaurante Vencedor</button>                        
+                </Link> 
+                <Link to="/votosDia">
+                    <button className="btn" id="add">Votos do dia</button>                        
+                </Link>                                
+                <Link to="/addUsuario">
+                    <button className="btn" id="add">Adicionar Usuário</button>    
+                </Link>                    
             </div>                                  
         </nav>
     )

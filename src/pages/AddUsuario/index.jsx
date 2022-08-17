@@ -12,8 +12,6 @@ export function AddUsuario() {
         
         let usuarioObject = 
         {  
-            "idUsuario": 0,          
-            "codigoUsuario": 6725,
             "nomeUsuario": nomeUsuario
         }                
         await postAddUsuario(usuarioObject);       
@@ -21,9 +19,9 @@ export function AddUsuario() {
     return(        
         <div>
             <NavbarComponent />
-            <div class="login-page">
-                <div class="form">
-                    <form class="login-form" onSubmit={handleSubmit}>
+            <div className="login-page">
+                <div className="form">
+                    <form className="login-form" onSubmit={handleSubmit}>
                         <h4>Cadastrar Usuário</h4>
                         <input name="username" onChange={(user) => setNomeUsuario(user.target.value)} placeholder="Digite seu nome" />
                         <button className="bottonAddRestaurante" type="submit">adicionar</button>                        
